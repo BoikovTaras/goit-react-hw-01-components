@@ -8,18 +8,22 @@ import { FriendsList } from './components/FriendList';
 import { TransactionHistory } from './components/TransactionHistory';
 
 export default function App() {
-  return (
-    <div>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-      <Statistic title="Upload stats" />
-      <FriendsList lists={friends} />
-      <TransactionHistory items={history} />
-    </div>
-  );
+                      return (
+                                            <div>
+                                                                  <Profile
+                                                                                        {...user}
+                                                                  />
+                                                                  <Statistic title="Upload stats" />
+                                                                  <FriendsList
+                                                                                        lists={
+                                                                                                              friends
+                                                                                        }
+                                                                  />
+                                                                  <TransactionHistory
+                                                                                        items={
+                                                                                                              history
+                                                                                        }
+                                                                  />
+                                            </div>
+                      );
 }
