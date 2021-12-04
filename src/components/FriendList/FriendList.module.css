@@ -1,0 +1,36 @@
+.friends {
+  display: block;
+  list-style: none;
+  padding: 0;
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.item {
+  display: flex;
+  padding: 20px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #42515a;
+  box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px -2px 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: 0.3s all linear;
+}
+.online {
+  border-left: 10px solid #3dc200;
+}
+.ofline {
+  border-left: 10px solid #e20606;
+}
+.avatar {
+  padding-left: 10px;
+  width: 63px;
+  height: 63px;
+}
+.name {
+  padding-left: 15px;
+  color: #ffffff;
+}
