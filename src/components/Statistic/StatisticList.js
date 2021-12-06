@@ -1,4 +1,6 @@
 import s from './Statistic.module.css';
+import PropTypes from 'prop-types';
+
 export const StatisticList = ({ items }) => (
   <ul className={s.list}>
     {items.map(item => (
@@ -9,3 +11,9 @@ export const StatisticList = ({ items }) => (
     ))}
   </ul>
 );
+
+StatisticList.propTypes = {
+  id: PropTypes.string,
+  label: PropTypes.string,
+  percentage: PropTypes.number,
+};
